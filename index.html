@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <h1> Nursery</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#shopnow">Shop Now</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!DOCTYPE html>
+          <html>
+          <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <style>
+          body {font-family: Arial, Helvetica, sans-serif;}
+          
+          /* Full-width input fields */
+          input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+          }
+          
+          /* Set a style for all buttons */
+          button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+          }
+          
+          button:hover {
+            opacity: 0.8;
+          }
+          
+          /* Extra styles for the cancel button */
+          .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+          }
+          
+          /* Center the image and position the close button */
+          .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            position: relative;
+          }
+          
+          .container {
+            padding: 16px;
+          }
+          
+          span.psw {
+            float: right;
+            padding-top: 16px;
+          }
+          
+          /* The Modal (background) */
+          .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            padding-top: 60px;
+          }
+          
+          /* Modal Content/Box */
+          .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+          }
+          
+          /* The Close Button (x) */
+          .close {
+            position: absolute;
+            right: 25px;
+            top: 0;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+          }
+          
+          .close:hover,
+          .close:focus {
+            color: red;
+            cursor: pointer;
+          }
+          
+          /* Add Zoom Animation */
+          .animate {
+            -webkit-animation: animatezoom 0.6s;
+            animation: animatezoom 0.6s
+          }
+          
+          @-webkit-keyframes animatezoom {
+            from {-webkit-transform: scale(0)} 
+            to {-webkit-transform: scale(1)}
+          }
+            
+          @keyframes animatezoom {
+            from {transform: scale(0)} 
+            to {transform: scale(1)}
+          }
+          
+          /* Change styles for span and cancel button on extra small screens */
+          @media screen and (max-width: 300px) {
+            span.psw {
+               display: block;
+               float: none;
+            }
+            .cancelbtn {
+               width: 100%;
+            }
+          }
+          </style>
+          </head>
+          <body>
+          
+          
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          
+          <div id="id01" class="modal">
+            
+            <form class="modal-content animate" action="/action_page.php" method="post">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              </div>
+          
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+          
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                <button type="submit">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+          
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+          </div>
+          
+          <script>
+          // Get the modal
+          var modal = document.getElementById('id01');
+          
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+              if (event.target == modal) {
+                  modal.style.display = "none";
+              }
+          }
+          </script>
+          
+          </body>
+          </html>
+        </ul>
+      </nav>
+    <section class="showcase-area" id="home">
+        <div class="showcase-container">
+            <h1 class="main-title">Rooted in nature nursery</h1>
+            <p>Nurturing a greener future at rooted in nature .</p>
+            <a href="#shopnow" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <p>This is a rooted in nature nursery.<br>
+                   We have a high-quality plants.<br>
+                   And the module of nursery is plant sales,garden supplies.<br>
+                   And the applications are plant identification,garden planning and plant care resources.</p>
+            </div>
+        </div>
+    </section>
+    <section id="shopnow">
+        <div class="plant-items">
+            <div class="plant-type fruite">
+                <h2 class="plant-title">Plant shop</h2>
+                <div class="plant-img"><img
+                        src="https://media.istockphoto.com/id/470649314/photo/nursery-filled-with-various-colorful-flowers.jpg?s=612x612&w=0&k=20&c=I-dS3DihpAYdtT-0jkm9HuHJMMBVhh3xSfCFRqIK8UQ="
+                        alt="error"
+                        width="500" height="500"  class="center">
+                    </div>
+            </div>
+            <div class="plant-items">
+                <div>
+                    <h2 class="plant-title">Orchid</h2>
+                    <div class="plant-item">
+                        <div class="plant-description">
+                            <p >Orchids are plants that belong to the family Orchidaceae, a diverse<br>
+                                 and widespread group of flowering plants with blooms that are often colourful<br>
+                                  and fragrant. Feed with orchid fertiliser from spring until autumn. Orchids<br>
+                                 roots are very susceptible to root rot, so it's important that they're never sitting<br>
+                                  in water. Water orchids by dunking the whole container in water, then draining, or from<br>
+                     above and again allow to drain. Tepid water is ideal, tepid rainwater even better. A natural orchid<br>
+                      cycle typically sees leaf growth in summer and early fall, a bloom spike in late fall or early winter,<br>
+                       and then blooming in early spring. Orchids require enough sunlight to produce flowers, but some <br>
+                       require full sun for the whole day while others grow better only in the shade. The life cycle of <br>
+                       an orchid can be divided into six distinct stages: seed germination, root growth, leaf production, <br>
+                       flower spike growth, blooming, and dormancy.</p>
+                            <p class="plant-price"><b>Price: ₹ 160</b></p>
+                        </div>
+                        <div class="plant-img"><img
+                                src="https://m.media-amazon.com/images/I/714pZ4yETNL._AC_UF894,1000_QL80_.jpg"
+                                alt="error" width="500" height="500" class="center">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="plant-title">Basil plant</h2>
+                    <div class="plant-item">
+                        <div class="plant-description">
+                            <p> Basil. It is a tender plant, and is used in cuisines worldwide. In Western cuisine, <br>
+                                the generic term "basil" refers to the variety also known as sweet basil or Genovese<br>
+                                 basil. Basil is native to tropical regions from Central Africa to Southeast Asia.<br>
+                            Basil has a sweet, pungent, and slightly spicy flavor, and it is widely used in a variety<br>
+                             of dishes, including pasta sauces, salads, and soups. It is also a popular ingredient <br>
+                             in many traditional medicine systems. Basil is available fresh or dried, and it can be<br>
+                              grown easily in a sunny location with well-draining soil.Basil has a strong, sweet smell<br>
+                               that is both herbal and slightly citric. It prefers temperatures between 50°F–80°F. <br>
+                               Basil is very sensitive to frost, so it's recommended to harvest your Basil beforehand,<br>
+                                as the cold temperatures will kill your plants.It is native to Asia (India, Pakistan,<br>
+                                 Iran, Thailand and other countries) and can be found growing wild in tropical and <br>
+                                 sub-tropical regions of the world.</p>
+
+                            <p class="plant-price"><b>Price: ₹ 199</b></p>
+                        </div>
+                        <div class="plant-img"><img
+                                src="https://i.pinimg.com/originals/af/46/f3/af46f337e90a3d468af498f87c6d10d0.jpg"
+                                alt="error" width="500" height="500" class="center">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="plant-title">Alovera</h2>
+                    <div class="plant-item">
+                        <div class="plant-description">
+                            <p> Aloe vera is a succulent plant species of the genus Aloe. It is widely distributed,<br>
+                                 and is considered an invasive species in many world regions. An evergreen perennial,<br>
+                                  it originates from the Arabian Peninsula, but grows wild in tropical, semi-tropical,<br>
+                                   and arid climates around the world. Aloe suggested uses include promoting wound<br>
+                                    healing, as anesthesia, as an antiseptic, for arthritis, burns, cold sores, fever,<br>
+                                     inflammation, as a moisturizer, and for itching. Aloe is possibly effective for<br> 
+                                     pain, inflammation, and wound healing.</p>
+                    <p>class="plant-price"><b>Price: ₹ 143</b></p>
+                        </div>
+                        <div class="plant-img"><img
+                                src="https://cdn11.bigcommerce.com/s-uemzj79jf9/images/stencil/original/products/153/3841/Aloe_vera_plant__32076.1642599365.jpg?c=2"
+                                alt="errors" width="500" height="500" class="center">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="plant-title">Tomato</h2>
+                    <div class="plant-item">
+                        <div class="plant-description">
+                            <p>   The tomato is the edible berry of the plant Solanum lycopersicum, commonly known as the <br>
+                                tomato plant.The species originated in western South America, Mexico, and Central America.<br>
+                               The Mexican Nahuatl word tomatl gave rise to the Spanish word tomate from which the English<br>
+                                       word tomato derived.Tomatoes are part of the nightshade family, which also includes<br>
+                                           potatoes, peppers and eggplants. Although the U.S. Supreme Court declared them <br>
+                                             a vegetable in 1893, tomatoes are actually a fruit since they grow on a vine.<br>
+                                        They're in season from May through October, with some variation depending on where<br>
+                                        you live Carbs comprise 4% of raw tomatoes, which amounts to fewer than 5 grams of<br>
+                                     carbs for a medium specimen (123 grams). Simple sugars, such as glucose and fructose,<br>
+                                   make up almost 70% of the carb content.Tomatoes and tomato products are rich sources of <br>
+                                   folate, vitamin C, and potassium.</p>
+                  <p class="plant-price"><b>Price: ₹ 109</b></p>
+                        </div>
+                        <div class="plant-img"><img
+                                src="https://media.istockphoto.com/id/1299586597/photo/indeterminate-tomato-plants-growing-outside-in-uk.jpg?s=612x612&w=0&k=20&c=XqvpohIQda3X_uqf2GLh_CwUKJAN3SYgqF2Hlo8thSM="
+                                alt="error" width="500" height="500" class="center">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="plant-title">Coriander</h2>
+                    <div class="plant-item">
+                        <div class="plant-description">
+                            <p> Coriander, also known as cilantro, is an annual herb in the family Apiaceae.<br>
+                                 All parts of the plant are edible, but the fresh leaves and the dried seeds are<br>
+                                  the parts most traditionally used in cooking. Like basil, cilantro can grow roots<br>
+                                if the stems are placed in a glass of water.Once the roots are long enough, just plant<br>
+                                them in a pot. In a few weeks new sprigs will be starting, and in a few months you'll have<br>
+                                 a full plant.Cilantro is an herb from the leaves of the coriander plant and is a member of<br>
+                                the parsley family. They look similar to flat-leaf parsley on long tender stems.Cilantro <br>
+                            is best planted in the early spring but also can be started in fall. Keep the soil regularly moist,<br>
+                            but not soaked.Good drainage is essential, as cilantro has deep roots. Aim for about one inch of water<br>
+                             per week.</p>
+                     <p class="plant-price"><b>Price: ₹ 125</b></p>
+                        </div>
+                        <div class="plant-img"><img
+                                src="https://rukminim1.flixcart.com/image/416/416/jrf8o7k0/plant-sapling/c/r/h/dhaniya-01-1-nv-original-imafd5muzmjpagad.jpeg?q=70"
+                                alt="error" width="500" height="500" class="center">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="plant-title">Bamboo</h2>
+                    <div class="plant-item">
+                        <div class="plant-description">
+                            <p> Bamboos are typically fast-growing perennials, with some species growing as much as 30 cm <br>
+                                 The woody ringed stems, known as culms, are typically hollow between the rings (nodes) and <br>
+                                 grow in branching clusters from a thick rhizome (underground stem).<br>
+                                The bamboo plants are considered as lucky plants as per the Feng Shui.<br>
+                                 According to Feng Shui, the hollow structure of the plant helps in<br>
+                                  the movement of Chi energy. It is believed that the bamboo plant helps<br>
+                             in the movement of positive energy, in turn, generating more abundance and prosperity.<br>
+                                What are 3 benefits of bamboo?It also provides food and nutrition security as food and<br>
+                                 animal feed.Bamboo is earthquake-proof, has greater tensile strength than steel,<br>
+                              and withstands compression better than concrete – which is why it is so valuable in construction.<br>
+                               Used as a substitute for concrete,it also reduces emissions of greenhouse gases.<br>
+                              Most bamboo, with a few exceptions, prefer to grow in full sun.<br>
+                              Because of this, bamboo will produce most of its foliage where this is maximum sun exposure,<br>
+                               which is obviously at the top of the bamboo.</p>
+                   <p class="plant-price"><b>Price: ₹ 250</b></p>
+                        </div>
+                        <div class="plant-img"><img
+                                src="https://m.media-amazon.com/images/I/51goUkNZtgL._SX466_.jpg"
+                                alt="error" width="500" height="500" class="center">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="plant-title">Mint</h2>
+                    <div class="plant-item">
+                        <div class="plant-description">
+                            <p> Mentha is a genus of plants in the family Lamiaceae. The exact distinction between<br>
+                                species is unclear;it is estimated that 13 to 24 species exist.Hybridization occurs<br>
+                                naturally where some species' ranges overlap.Many hybrids and cultivars are known.<br>
+                                Mint performs its best in full sun, as long as the soil is kept moist,but it also<br>
+                                thrives in partial shade.The primary flavor profile of mint is a subtly sweet taste<br>
+                                and cool sensation that comes from the menthol contained in the herb.This chemical <br>
+                                sends a message to the brain that it's consuming something cold,triggering a chilly<br>
+                                sensation that gives the effect that the herb is cooling the mouth.</p>
+                 <p class="plant-price"><b>Price: ₹ 120</b></p>
+                        </div>
+                        <div class="plant-items">
+                            <div class="plant-img"><img
+                                    src="https://www.almanac.com/sites/default/files/users/AlmanacStaffArchive/mint-basket_full_width.jpg"
+                                    alt="error" width="500" height="500" class="center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="plant-title">Carrot</h2>
+                <div class="plant-item">
+                    <div class="plant-description">
+                        <p> carrot, (Daucus carota), herbaceous, generally biennial plant of the Apiaceae family<br>
+                            that produces an edible taproot.Among common varieties root shapes range from globular<br>
+                             to long,with lower ends blunt to pointed. Besides the orange-coloured roots, white-,<br>
+                              yellow-, and purple-fleshed varieties are known.Carrots are an excellent source of<br>
+                               Vitamin A and Beta-carotene.Along with these nutrients, it is a good source <br>
+                               of Vitamin C, Lutein, Zeaxanthin, Vitamin K,dietary fiber,etc Carrots are roots,<br>
+                                it's a taproot. Carrots have root caps, no knots, and do not directly attach<br>
+                             to leaves or flowers.Carrots grow best in full sun and light, fertile, well-drained<br>
+                              soil.They're planted when the ground begins to soften in early spring<br>
+                            (for a late-spring harvest),and planted again in late summer (for a fall harvest).</p>
+             <p class="plant-price"><b>Price: ₹ 250</b></p>
+                    </div>
+                    <div class="plant-items">
+                        <div class="plant-img"><img
+                                src="https://cdn.shopify.com/s/files/1/0489/5922/6015/files/30_65a58620-2738-4dc8-9f92-bf7bcc1b6e7f_480x480.png?v=1645618832"
+                                alt="error" width="500" height="500" class="center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="plant-title">Brinjal</h2>
+            <div class="plant-item">
+                <div class="plant-description">
+                    <p> Eggplant, aubergine or brinjal is a plant species in the nightshade family Solanaceae.<br>
+                         Solanum melongena is grown worldwide for its edible fruit. Most commonly purple, the spongy<br>
+                         ,absorbent fruit is used in several cuisines. Typically used as a vegetable in cooking, <br>
+                         it is a berry by botanical definition.Eggplant is a small- to medium-sized bush vegetable that <br>
+                         produces smooth, glossy-skinned fruit that can vary in length from 5 to 12 inches (12-30cm) long.<br>
+                        Eggplant has a flavor similar to summer squash or zucchini: tender, mild, and sweet with <br>
+                        a slight vegetal bitterness.Eggplants are in peak season from July through October.</p>
+         <p class="plant-price"><b>Price: ₹ 109</b></p>
+                </div>
+                <div class="plant-items">
+                    <div class="plant-img"><img
+                            src="https://media.istockphoto.com/id/1175349177/photo/ripe-purple-eggplants.jpg?s=612x612&w=0&k=20&c=KeOqHB9tCrEMKxIKMj6I1Zn589n2zgWVGo5gtlCzBNI="
+                            alt="error" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="plant-title">Curry leaf</h2>
+        <div class="plant-item">
+            <div class="plant-description">
+                <p> The curry tree, Murraya koenigii or Bergera koenigii, is a tropical and sub-tropical tree<br>
+                     in the family Rutaceae, native to Asia. The plant is also sometimes called sweet neem,<br>
+                      though M. koenigii is in a different family to neem, Azadirachta indica, which is in the <br>
+                      related family Meliaceae.The characteristic aroma of curry leaves combines green and <br>
+                      terpeny notes with a pronounced sulfury and burnt odor note.Curry leaves were found to<br>
+                       be highly effective in reducing blood glucose levels Kalyani, 2015 conducted an animal<br>
+                        study that demonstrated that the extract of curry leaves effectively reduces high<br>
+                         blood pressure, similar to the action of amlodipine (blood pressure-lowering drug).</p>
+     <p class="plant-price"><b>Price: ₹ 159</b></p>
+            </div>
+            <div class="plant-items">
+                <div class="plant-img"><img
+                        src="https://rukminim1.flixcart.com/image/416/416/jyug0i80/plant-sapling/m/z/a/kadi-patta-1-modern-plant-original-imafgxkaakevugkz.jpeg?q=70"
+                        alt="error" width="500" height="500" class="center">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <h2 class="plant-title">Hibiscus</h2>
+    <div class="plant-item">
+        <div class="plant-description">
+            <p> Hibiscus is a genus of flowering plants in the mallow family, Malvaceae. The genus is quite large,<br>
+            comprising several hundred species that are native to warm temperate,subtropical and tropical regions<br>
+            throughout the world.Tropical hibiscus plants should be kept consistently moist, so water whenever <br>
+            the top inch of soil is dry.stop hair loss,make your hair look healthy and lustrous,prevent premature <br>
+            graying,thicken hair and add volume ,treat dandruff.</p>
+ <p class="plant-price"><b>Price: ₹ 120</b></p>
+        </div>
+        <div class="plant-items">
+            <div class="plant-img"><img
+                    src="https://preview.redd.it/ruu1ey3a42s11.jpg?auto=webp&s=82a44b2b2e803a79df6e85b914219965a8f476fb"
+                    alt="error" width="500" height="500" class="center">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div>
+<h2 class="plant-title">Chillies</h2>
+    <div class="plant-item">
+        <div class="plant-description">
+            <p> Chilli shrubs are perennial and short-lived. They can grow up to 1.5 m in height.<br>
+                 Their stems are woody at the base, fleshy and either erect or semi-prostrate.<br>
+                The shrub consists of a main tap root with many lateral roots.They are rich in <br>
+                vitamins, minerals, and various unique plant compounds.Chili pepper has preventive<br>
+                 and therapeutic properties for many ailments such as different types of cancer, rheumatism,<br>
+                  stiff joints, bronchitis and chest colds with cough and headache, arthritis, heart arrhythmias<br>
+                   and used as stomachic Sowing of Chilli for the Kharif crop season takes place between July and<br>
+                  August while for the Rabi season, Chilli is sown over October and November.chillies are ready<br>
+                  to harvest in 80 to 90 days.</p>
+ <p class="plant-price"><b>Price: ₹ 120</b></p>
+        </div>
+        <div class="plant-items">
+            <div class="plant-img"><img
+                    src="https://rukminim1.flixcart.com/image/416/416/k5ihzm80/plant-sapling/z/t/z/egl-fd-1007-1-eaglesford-original-imafnwygrva8yd6w.jpeg?q=70"
+                    alt="error" width="500" height="500" class="center">
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div>
+    <h2 class="plant-title">Capsicum</h2>
+        <div class="plant-item">
+            <div class="plant-description">
+                <p> Capsicum is a genus of flowering plants in the nightshade family Solanaceae, native to the Americas,<br>
+                     cultivated worldwide for their chili pepper or bell pepper fruit.The Capsicum plant, while a single species,<br>
+                      comes in many forms and hues, including red, yellow, green,purple, and even black!Green capsicum can be<br>
+                       harvested at 55 to 60 days after transplanting, yellow capsicum at 70-75 days whereas red capsicum at<br>
+                        80-90 days.the bell pepper's life stages include germination, vegetative development, flowering, pollination,<br>
+                     fruiting, and ripening.Seeds are mainly sown in the end of the October month and transplanting <br>
+                     is done in mid-February. For early yield, seeds are sown in the mid-October month and transplanting<br>
+                      is done in end November.Capsicum prefers moderately low temperatures and dry season. Seed germinates <br>
+                      best at the temperature range from 20 to 25◦C and grows best at 18 - 25◦C. </p>
+     <p class="plant-price"><b>Price: ₹ 143</b></p>
+            </div>
+            <div class="plant-items">
+                <div class="plant-img"><img
+                        src="https://cf.organicbazar.net/wp-content/uploads/2021/05/Capsicum-F1-Hyb-Andhra-115-Seeds-1.jpg"
+                        alt="error" width="500" height="500" class="center">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <h2 class="plant-title">Cauliflower</h2>
+            <div class="plant-item">
+                <div class="plant-description">
+            <p> cauliflower, (Brassica oleracea, variety botrytis), highly modified form of cabbage in the mustard<br>
+                family (Brassicaceae),grown for its edible masses of partially developed flower structures and<br>
+                fleshy stalks.Cauliflower has been selectively bred over the years to have an overall flavor<br>
+                that's fairly nutty and almost sweet.The reason for the discoloration is oxidation,which occurs<br>
+                naturally due to prolonged exposure to light and air.These spots are more likely to occur the<br>
+                longer that the cauliflower has been stored and they do not mean that your cauliflower has gone<br>
+                bad and needs to be tossed out.Risks.There may be some unwanted effects of consuming cauliflower,<br>
+                especially if it is eaten in excess.Bloating and flatulence: Foods that are high in fiber may<br>
+                cause increased bloating and flatulence.However, most people can tolerate these foods in moderate<br>
+                portions.When someone is constantly consuming cauliflower, this can interfere and react with iodine<br>
+                levels inside the human body. This can affect how your body absorbs iodine which can cause issues of<br>
+                hypothyroidism. This causes a decrease in metabolism,dry skin and hair,weight gain and other common<br>
+                issues.</p>
+         <p class="plant-price"><b>Price: ₹ 400</b></p>
+                </div>
+                <div class="plant-items">
+                    <div class="plant-img"><img
+                            src="https://ucanr.edu/blogs/napaevents/blogfiles/78630.jpg"
+                            alt="error" width="500" height="500" class="center">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <h2 class="plant-title">Cabbage</h2>
+                <div class="plant-item">
+                    <div class="plant-description">
+                        <p> Cabbage, comprising several cultivars of Brassica oleracea, is a leafy green, red, or white<br>
+                            biennial plant grown as an annual vegetable crop for its dense-leaved heads.Cabbage is <br>
+                            highly nutritious and rich in vitamin C, fiber, and vitamin K. What's more,some research<br>
+                            suggests that it may support digestion, improve heart health,and decrease inflammation.<br>
+                            Despite its impressive nutrient content, cabbage is often overlooked.Consuming cabbage<br>
+                            can prove to be very beneficial for weight loss.It is very low in calories, which is<br>
+                            considered suitable for reducing weight.According to the study, there are about 25 <br>
+                            calories in 100 grams of cabbage.Cabbage is rich in water and fibre, which helps in<br>
+                            keeping the intestines healthy.Cabbage contains phytonutrients that act as antioxidants<br>
+                            to reduce your risk of certain cancers.However, eating large quantities of cabbage can<br>
+                            cause negative side effects, such as flatulence,diarrhea, medication interactions and<br>
+                            hypothyroidism.</p>
+             <p class="plant-price"><b>Price: ₹ 350</b></p>
+                    </div>
+                    <div class="plant-items">
+                        <div class="plant-img"><img
+                                src="https://www.researchgate.net/publication/330822373/figure/download/fig2/AS:721758608973825@1549092070493/Optimal-cabbage-planting-density-photo-by-Janko-Cervenski-Slika-4-Optimalna-gustina.png"
+                                alt="error" width="500" height="500" class="center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div>
+                <h2 class="plant-title">Sunflower seeds</h2>
+                    <div class="plant-item">
+                        <div class="plant-description">
+                            <p>The sunflower seed is the seed of the sunflower. There are three types of commonly used sunflower seeds:<br>
+                                 linoleic, high oleic, and sunflower oil seeds. Each variety has its own unique levels of monounsaturated,<br>
+                                saturated, and polyunsaturated fats. The information in this article refers mainly to the linoleic variety.<br>
+                                Iron: Sunflower seeds are an excellent source of iron, a vital mineral for hair growth.Iron plays an essential<br>
+                                role in delivering oxygen to the hair follicles, which, in turn,can stimulate the formation of new hair.<br>
+                                Sunflower seeds have a mild, nutty flavor and a firm but tender texture. They're often roasted to enhance<br>
+                                the flavor, though you can also buy them raw.Sunflower seeds are rich in oleic and linoleic acid and low<br>
+                                in saturated fats and sodium. They also contain magnesium, potassium and fibre.They help to lower blood<br>
+                                pressure and serum cholesterol levels.</p>
+                 <p class="plant-price"><b>Price: ₹ 299</b></p>
+                        </div>
+                        <div class="plant-items">
+                            <div class="plant-img"><img
+                                    src="https://media.istockphoto.com/id/153572197/photo/closeup-of-sunflower-seeds.jpg?s=612x612&w=0&k=20&c=GP4ILfhx-Xlee6oGYhJK4i_lzrjuWdEXnMzItr96IdA="
+                                    alt="error" width="500" height="500" class="center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <h2 class="plant-title">Pumpkin seeds</h2>
+                        <div class="plant-item">
+                            <div class="plant-description">
+                                <p> A pumpkin seed, also known in North America as a pepita,is the edible seed of a pumpkin<br>
+                                    or certain other cultivars of squash.The seeds are typically flat and asymmetrically oval,<br>
+                                    have a white outer husk, and are light green in color after the husk is removed.If you eat<br>
+                                    too many,you may experience gas and bloating.Pumpkin seed extract has a protective effect<br>
+                                    against nutrient deficiency-driven hair loss. The antioxidants Vitamin E and Linoleic found in<br>
+                                    pumpkin seed extract hold strong anti-inflammatory effects and decrease oxidation, which also<br>
+                                    combats hair loss and boosts hair health.What Do They Taste Like? Green pepitas have a sweet,<br>
+                                    nutty flavor, making them a perfect accent for most everything from soups and salads to main<br>
+                                    courses,and desserts. Pepitas are dense and oily like sunflower seeds, and taste similar too,<br>
+                                    except that pepitas are nuttier and sweeter,as well as a bit larger in size.Pumpkin seeds: They<br>
+                                    are abundant in protein and fibre which improve the digestive system.They are also loaded with<br>
+                                    omega -3 fatty acid which are vital for the development of your baby's brain and nervous system.<br>
+                                    It is a natural source of DHA and alpha-linolenic acid which aids nursing moms in breastfeeding.</p>
+                     <p class="plant-price"><b>Price: ₹ 299</b></p>
+                            </div>
+                            <div class="plant-items">
+                                <div class="plant-img"><img
+                                        src="https://media.istockphoto.com/id/1175603836/photo/pumpkin-seeds.jpg?s=612x612&w=0&k=20&c=0PQCwKjIyjfDa-rtSy-szBGHB6wNuAUrHeNA-trEVp4="
+                                        alt="error" width="500" height="500" class="center">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            
+    </section>
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="form-container">
+                <h2>Contact Us</h2><input type="text" placeholder="Your Name"> <input type="email" placeholder="E-Mail">
+                <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea> <a href="#"
+                    class="btn btn-primary">Submit</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="left">
+          <p>Copyright © 2023 Rooted in nature
+        </div>
+      </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
